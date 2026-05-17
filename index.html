@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Join Our Marketplace — Creator-first, Performance-first</title>
+  <meta name="description" content="Join a curated marketplace for creators and developers. Fast, secure, and conversion-focused onboarding.">
+
+  <!-- Preload stylesheet to avoid render-blocking while keeping control -->
+  <link rel="preload" href="styles.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
+
+  <!-- Minimal critical styles to avoid FOUS/flash -->
+  <style>
+    :root{--bg:#fff;--muted:#6b7280;--accent:#0b74de;--maxw:980px}
+    *{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.45;color:#111;background:var(--bg);-webkit-font-smoothing:antialiased}
+    .container{max-width:var(--maxw);margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;background:linear-gradient(135deg,#0b74de 0%,#5fd3ff 100%);border-radius:8px;display:inline-block}
+    h1{font-size:28px;margin:0}
+    p.lead{color:var(--muted);margin:8px 0 20px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
+    .card{background:#fff;border:1px solid #eef2f7;padding:20px;border-radius:12px}
+    .cta{display:flex;gap:10px}
+    .btn{background:var(--accent);color:#fff;padding:12px 16px;border-radius:8px;border:0;cursor:pointer}
+    .btn.secondary{background:#eef6ff;color:var(--accent)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+    .feature{background:#f8fafc;padding:14px;border-radius:10px}
+    footer{margin-top:48px;color:var(--muted);font-size:13px}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.features{grid-template-columns:1fr}}
+  </style>
+
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand" aria-label="Company">
+        <span class="logo" aria-hidden="true"></span>
+        <div>
+          <strong>Marketplace</strong>
+          <div style="font-size:12px;color:var(--muted)">Creators & Developers</div>
+        </div>
+      </div>
+      <nav aria-label="Top navigation">
+        <a href="#features" style="color:var(--muted);text-decoration:none;margin-right:12px">Why us</a>
+        <a href="#pricing" style="color:var(--muted);text-decoration:none;margin-right:12px">Pricing</a>
+        <a href="#faq" style="color:var(--muted);text-decoration:none">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div>
+          <h1 id="hero-heading">Join a marketplace built for creators who create</h1>
+          <p class="lead">Sell your work, reach curated customers, and keep the tools you love. Fast onboarding, fair fees, and developer-friendly integrations.</p>
+
+          <figure class="hero-illustration" aria-hidden="true">
+            <!-- Lightweight inline SVG illustration: small, crisp, and scalable -->
+            <svg width="560" height="320" viewBox="0 0 560 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <rect width="560" height="320" rx="18" fill="#0b74de" opacity="0.06"/>
+              <g transform="translate(28,24)">
+                <rect x="0" y="0" width="220" height="132" rx="10" fill="#fff" opacity="0.98"/>
+                <rect x="12" y="14" width="196" height="14" rx="4" fill="#e6f3ff"/>
+                <rect x="12" y="40" width="120" height="10" rx="3" fill="#f3f7fb"/>
+                <rect x="12" y="60" width="160" height="10" rx="3" fill="#f3f7fb"/>
+
+                <rect x="240" y="10" width="260" height="92" rx="10" fill="#fff" opacity="0.98"/>
+                <circle cx="272" cy="36" r="20" fill="#0b74de"/>
+                <rect x="300" y="24" width="180" height="12" rx="4" fill="#e6f3ff"/>
+              </g>
+              <g transform="translate(40,180)">
+                <rect x="0" y="0" width="480" height="88" rx="10" fill="#fff" opacity="0.98"/>
+                <rect x="14" y="12" width="120" height="10" rx="3" fill="#f3f7fb"/>
+                <rect x="14" y="34" width="200" height="10" rx="3" fill="#f3f7fb"/>
+              </g>
+            </svg>
+          </figure>
+
+          <ul class="features-list" aria-hidden="true">
+            <li>Built-in payments & payouts</li>
+            <li>SEO optimized listing templates</li>
+            <li>Advanced analytics & conversion tools</li>
+          </ul>
+
+          <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+            <button class="btn" id="primary-cta">Get started — it’s free</button>
+            <button class="btn secondary" id="demo-cta">See example listing</button>
+            <span style="color:var(--muted);font-size:13px">No code required • 30s setup</span>
+          </div>
+
+          <div class="features" id="features" style="margin-top:22px">
+            <div class="feature"><strong>Performance</strong><div style="color:var(--muted)">Optimized images, lazy loads, and minimal JS.</div></div>
+            <div class="feature"><strong>Security</strong><div style="color:var(--muted)">Secure payouts & verified creators.</div></div>
+            <div class="feature"><strong>Integrations</strong><div style="color:var(--muted)">Webhooks, API, and embed widgets.</div></div>
+          </div>
+        </div>
+
+        <aside class="card" aria-labelledby="signup-heading">
+          <h3 id="signup-heading">Join the marketplace</h3>
+          <p style="color:var(--muted);margin:0 0 12px">Create a listing and start selling in minutes.</p>
+
+          <form id="signup" novalidate>
+            <label style="display:block;margin-bottom:8px">
+              <span style="font-size:13px;color:var(--muted)">Email</span>
+              <input name="email" type="email" required placeholder="you@studio.com" style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e6edf3">
+            </label>
+            <label style="display:block;margin-bottom:8px">
+              <span style="font-size:13px;color:var(--muted)">Product Name</span>
+              <input name="product" type="text" required placeholder="Your product or service" style="width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e6edf3">
+            </label>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+              <button class="btn" type="submit">Join now</button>
+              <button class="btn secondary" type="button" id="learn-more">Learn more</button>
+            </div>
+            <div id="form-msg" role="status" aria-live="polite" style="margin-top:10px;color:var(--muted);font-size:13px"></div>
+          </form>
+        </aside>
+      </section>
+
+      <section style="margin-top:34px">
+        <h2 style="margin:0 0 10px">What creators love</h2>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <blockquote class="card" style="flex:1 1 300px"><strong>"Best platform to sell my courses."</strong><div style="color:var(--muted);margin-top:8px">— Alex, educator</div></blockquote>
+          <blockquote class="card" style="flex:1 1 300px"><strong>"Fast setup and low fees."</strong><div style="color:var(--muted);margin-top:8px">— Priya, product designer</div></blockquote>
+        </div>
+      </section>
+
+      <section id="pricing" style="margin-top:34px">
+        <h2>Pricing</h2>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px">
+          <div class="card"><strong>Starter</strong><div style="font-size:20px;margin-top:8px">Free</div><div style="color:var(--muted);margin-top:8px">Listing tools, basic analytics</div></div>
+          <div class="card"><strong>Growth</strong><div style="font-size:20px;margin-top:8px">$29/mo</div><div style="color:var(--muted);margin-top:8px">Advanced analytics, priority support</div></div>
+          <div class="card"><strong>Pro</strong><div style="font-size:20px;margin-top:8px">$99/mo</div><div style="color:var(--muted);margin-top:8px">Custom contracts, enterprise features</div></div>
+        </div>
+      </section>
+
+      <section id="tools" style="margin-top:34px">
+        <h2>Tools & Assets</h2>
+        <p style="color:var(--muted);margin-top:6px">A curated set of templates, LUTs, sounds and thumbnails to help creators publish faster.</p>
+        <div class="tools-grid" style="margin-top:12px">
+          <article class="card" style="padding:14px;text-align:center">
+            <figure class="thumb" aria-hidden="false" style="margin:0 auto 12px">
+              <picture>
+                <source srcset="assets/delivery1_small.webp" type="image/webp">
+                <img src="assets/delivery1.webp" alt="Video thumbnail" loading="lazy" width="120" height="68">
+              </picture>
+            </figure>
+            <div>
+              <strong>Video Thumbnails</strong>
+              <div style="color:var(--muted);font-size:14px;margin-top:8px">High-converting thumbnail templates sized for social platforms. Easily swap with your creative assets.</div>
+            </div>
+          </article>
+
+          <article class="card" style="padding:14px;text-align:center">
+            <figure class="thumb" aria-hidden="false" style="margin:0 auto 12px">
+              <picture>
+                <source srcset="assets/delivery2_small.webp" type="image/webp">
+                <img src="assets/delivery2.webp" alt="Audio pack thumbnail" loading="lazy" width="120" height="68">
+              </picture>
+            </figure>
+            <div>
+              <strong>Audio Packs</strong>
+              <div style="color:var(--muted);font-size:14px;margin-top:8px">Sound effects and music optimized for videos and ads. Downloadable SFX and loops ready for editors.</div>
+            </div>
+          </article>
+
+          <article class="card" style="padding:14px;text-align:center">
+            <figure class="thumb" aria-hidden="false" style="margin:0 auto 12px">
+              <picture>
+                <source srcset="assets/delivery3_small.webp" type="image/webp">
+                <img src="assets/delivery3.webp" alt="Templates library thumbnail" loading="lazy" width="120" height="68">
+              </picture>
+            </figure>
+            <div>
+              <strong>Templates Library</strong>
+              <div style="color:var(--muted);font-size:14px;margin-top:8px">Editable motion templates, LUTs, overlays and text animations built to drop straight into your editor.</div>
+            </div>
+          </article>
+        </div>
+
+        <p style="margin-top:14px;color:var(--muted);font-size:13px">Images shown above are lightweight SVG placeholders — replace with optimized WebP/JPEG sources using `picture` + `srcset` for production.</p>
+      </section>
+
+      <section id="faq" style="margin-top:34px">
+        <h2>FAQ</h2>
+        <details class="card"><summary>How do payouts work?</summary><div style="margin-top:8px;color:var(--muted)">We support bank transfer and Stripe payouts. You control schedule.</div></details>
+        <details class="card" style="margin-top:8px"><summary>Are there listing fees?</summary><div style="margin-top:8px;color:var(--muted)">No listing fee; platform takes a small commission on sales.</div></details>
+      </section>
+    </main>
+
+    <footer>
+      <div>© Marketplace • Built for creators</div>
+    </footer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* Core styles kept minimal for performance */
+:root{--accent:#0b74de;--muted:#6b7280}
+img{max-width:100%;height:auto}
+input,button{font:inherit}
+button{border:none}
+.card{box-shadow:0 6px 18px rgba(12,20,30,0.04)}
+/* Utility spacing (small) */
+.mt-8{margin-top:8px}
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+/* Accessibility: focus outlines */
+:focus{outline:3px solid rgba(11,116,222,0.18);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* Slow connections: keep small */
+@media(max-width:900px){.container{padding:16px;margin:20px auto}}
+
+/* Visual refinements */
+body{color:#0b1b2b}
+h1{font-weight:700;letter-spacing:-0.02em}
+.lead{font-size:16px;color:var(--muted)}
+.hero{background:linear-gradient(180deg,rgba(11,116,222,0.03),transparent);padding:26px;border-radius:14px}
+.hero-illustration{margin:18px 0 8px;display:block;max-width:100%;overflow:hidden}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.feature{background:#fff;padding:14px;border-radius:10px;border:1px solid #eef6ff}
+.btn{transition:transform .12s ease,box-shadow .12s ease}
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:translateY(0)}
+.btn{box-shadow:0 6px 18px rgba(11,116,222,0.08)}
+.btn.secondary{box-shadow:none}
+
+@media(max-width:900px){.features{grid-template-columns:1fr}.hero{padding:18px}}
+
+/* Tools grid */
+.tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.thumb{width:120px;height:68px;border-radius:8px;overflow:hidden;display:block}
+@media(max-width:900px){.tools-grid{grid-template-columns:1fr}}
+
+/* Tools & Assets visual tweaks: stack image above text */
+.tools-grid article.card{display:flex;flex-direction:column;align-items:center;text-align:center;padding:16px;gap:8px;min-height:unset}
+.tools-grid article.card strong{font-size:16px;display:block;margin-bottom:6px}
+.tools-grid article.card div{line-height:1.45;color:var(--muted)}
+.tools-grid article.card img{display:block;border-radius:8px;width:120px;height:68px;object-fit:cover}
